@@ -1,0 +1,47 @@
+<!--pages/roadinfo/roadinfo.wxml-->
+<!-- <text>pages/roadinfo/roadinfo.wxml</text> -->
+<view class="top">
+  <text>选择路况类型，地址，填写路况信息即可发布</text>
+</view>
+<view class="page-body">
+      <radio-group bindchange="radioChange">
+        <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+          <view class="weui-cell__hd" >
+            <radio value="{{item.value}}" checked="true"/>
+          </view>
+          <view class="weui-cell__bd">{{item.name}}</view>
+        </label>
+      </radio-group>
+</view>
+<view class="address">
+  <text>选择地址</text>
+  <button bindtap="chooseAddressFn">点击选择</button>
+  <!-- <input type="button" value="点击选择"  bindtap="chooseAddressFn" /> -->
+</view>
+
+<view class="content" >
+  <input type="text" placeholder="选择或输入地址" value="{{address}}"/>
+</view>
+
+<view class="roadinfo">
+<text>填写路况信息</text>
+<input type="text" placeholder="请输入内容或长按语音识别" value="{{yuyindata}}" />
+</view>
+<view class="sang">
+<image src="/images/sang.png"></image>
+<button bindtouchstart="touchStart" bindtouchend="touchEnd">
+   <text wx:if="{{recordState == false}}">长按识别</text>
+   <text wx:else>识别中...</text>
+</button>
+</view>
+<text>上传附件</text>
+<view class="bottom">
+  <!-- <image src="/images/photo.png"></image> -->
+<block wx:for="{{imgs}}" wx:key="index">
+<image src="{{item}}" style="width:180rpx;height:180rpx;"></image>
+</block>
+<button bindtap="setImgsFn">点击上传</button>
+</view>
+<navigator class="submit">
+<button type="primary" size="mini">提交</button>
+</navigator>

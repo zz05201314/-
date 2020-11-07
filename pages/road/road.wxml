@@ -1,0 +1,61 @@
+<!--pages/road/road.wxml-->
+<!-- <text>pages/road/road.wxml</text> -->
+<view class="road">
+  <view class="img">
+    <image src="/images/t1.jpg"></image>
+  </view>
+  <view class="content">
+    <view class="name">
+      <text>鞠</text>
+    </view>
+    <view class="title">
+      <text>#畅通# </text>
+      <text>道路畅通，改色膜来看时生命里表示看</text>
+    </view>
+    <view class="info">
+      <image src="/images/1.jpg"></image>
+      <image src="/images/2.jpg"></image>
+      <image src="/images/3.jpg"></image>
+      <image src="/images/4.jpg"></image>
+    </view>
+    <view class="address">
+      <text>江苏南京市建邺区应天大街</text>
+    </view>
+    <view class="time">
+      <text>2020-10-10 15:30：25</text>
+    </view>
+  </view>
+</view>
+<view class="road">
+  <view class="img">
+    <image src="/images/t1.jpg"></image>
+  </view>
+  <view class="content">
+    <view class="name">
+      <text>鞠</text>
+    </view>
+    <view class="title">
+      <text>#管制# </text>
+      <text>道路拥堵，请绕道行驶此时间额外表示看</text>
+    </view>
+    <view class="info">
+      <image src="/images/1.jpg"></image>
+      <image src="/images/2.jpg"></image>
+      <image src="/images/3.jpg"></image>
+      <image src="/images/4.jpg"></image>
+      <image src="/images/5.jpg"></image>
+      <image src="/images/6.jpg"></image>
+    </view>
+    <view class="address">
+      <text>江苏南京市建邺区所街20号</text>
+    </view>
+    <view class="time">
+      <text>2020-10-30 09:60：25</text>
+    </view>
+  </view>
+</view>
+
+<!-- 发布路况 -->
+<view class="add" bindtap="gotoPage">
+<image src="/images/add.png"></image>
+</view>

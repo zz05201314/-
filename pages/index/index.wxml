@@ -1,0 +1,39 @@
+<!--pages/index/index.wxml-->
+<!-- <text>pages/index/index.wxml</text> -->
+<!-- 天安门 -->
+<!-- 高德地图116.397451,39.909187 -->
+<!-- 腾讯  39.903740,116.397827 -->
+<!-- 卫星图  enable-satellite="true" -->
+<map 
+  class="map"
+  scale="{{scale}}"
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  enable-traffic="true"
+  show-compass="true"
+  show-scale="true"
+  show-location="true"
+  enable-overlooking="true"
+
+>
+<!-- 按钮 -->
+<cover-view class="scale-control">
+<button class="add" data-type="add" bindtap="setScaleFn"> + </button>
+<button class="del" data-type="del" bindtap="setScaleFn"> - </button>
+</cover-view>
+<!-- 定位按钮-->
+<cover-view class="position-control">
+   <!-- <button>●</button> -->
+<cover-image src="/images/t.png" bindtap="setPositionFn"></cover-image>
+</cover-view>
+<!-- 导航 -->
+<cover-view class="road-control" bindtap="showMapFn">
+   <!-- <button>路</button>
+   <button>线</button> -->
+
+   <!-- <cover-view> -->
+      <cover-image src="/images/t1.png"></cover-image>
+      <button>导航</button>
+   <!-- </cover-view> -->
+</cover-view>
+</map>  

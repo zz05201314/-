@@ -1,0 +1,34 @@
+<!--pages/my/my.wxml-->
+<view class="top">
+<image src="/images/t1.jpg"></image>
+<text>鞠</text>
+</view>
+<!-- 导航 -->
+<view class="navs">
+  <view class="nav">
+    <text>群聊</text>
+    <text>></text>
+  </view>
+  <view class="nav" open-type="share">
+    <text>分享</text>
+    <text>></text>
+  </view>
+  <view class="nav" bindtap="saoFn">
+    <text>扫一扫</text>
+    <text>></text>
+  </view>
+  <view class="nav">
+    <text>关于</text>
+    <text>></text>
+  </view>
+  <view class="nav" open-type="feedback">
+    <text>意见反馈</text>
+    <text>></text>
+  </view>
+  <view class="nav" open-type="contact" bindcontact="handleContact">
+    <text>联系我们</text>
+    <text>></text>
+  </view>
+</view>
+
+<view class="logout">退出</view>

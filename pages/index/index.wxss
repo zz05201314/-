@@ -1,0 +1,67 @@
+/* pages/index/index.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.map{
+  width: 100%;
+  height: 100%;
+}
+.scale-control{
+  width: 80rpx;
+  height: 200rpx;
+  background:rgba(255, 255, 255, 0.6);
+  /* background: #fff; */
+  border-radius: 35rpx;
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  overflow: hidden;
+}
+.scale-control .add,
+.scale-control .del{
+  width: 100%;
+  height: 50%;
+  background:rgba(255, 255, 255, 0.6);
+  font-size: 45rpx;
+}
+.scale-control button::after {border:none !important;}
+
+/* 定位按钮 */
+.position-control{
+  position: absolute;
+  bottom: 10%;
+  right: 6%;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background: #fff;
+}
+/* .position-control button{
+  width:100%;
+  height: 100%; 
+  line-height: 88%;
+  padding-top: 5rpx;
+  background: #fff;
+  border-radius: 50%;
+} */
+/* 导航 */
+.road-control{
+  width: 100rpx;
+  height: 100rpx;
+  /* background:#4790F7; */
+  border-radius:50%;
+  position: absolute;
+  right: 5%;
+  bottom: 22%;
+  overflow: hidden;
+}
+/* .road-control button {
+  width:100%;
+  height: 50%;  
+  line-height: 100%;
+  color:#fff;
+  background: #4790F7;
+  padding-top: 4rpx;
+}
+.road-control button::after {border:none;} */
